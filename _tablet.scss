@@ -1,0 +1,27 @@
+@media(max-width: 1260px){
+    .center{
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+    .top{
+        &__content{
+            position: sticky;
+            justify-content: center;
+        }
+    }
+    .about{
+        margin-top: 30px;
+        &__text{
+            position: sticky;
+            width: 100%;
+        }
+    }
+    .services{
+        &__dot-image,&__circle-image {
+            display: none;
+        }
+        &__main-image{
+            width: 50%;
+        }
+    }
+}

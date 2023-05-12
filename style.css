@@ -95,6 +95,7 @@ a {
   position: absolute;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   -moz-column-gap: 83px;
        column-gap: 83px;
   margin-top: 32px;
@@ -186,11 +187,90 @@ a {
 .client__logo {
   margin-top: 61px;
   display: flex;
+  flex-wrap: wrap;
   -moz-column-gap: 27px;
        column-gap: 27px;
   align-items: center;
   justify-content: center;
+  padding-bottom: 60px;
 }
 .client__logo--center {
   padding-top: 18px;
+}
+
+.services {
+  padding-top: 57px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+.services__main-image {
+  position: absolute;
+}
+.services__dot-image {
+  position: relative;
+  bottom: 35px;
+  left: 260px;
+}
+.services__circle-image {
+  position: relative;
+  top: 300px;
+  right: 75px;
+}
+.services__text {
+  margin-top: 21px;
+}
+.services__title {
+  margin: 14px 0;
+}
+.services__elements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service {
+  margin-top: 74px;
+  max-width: 251px;
+}
+.service__caption {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.service__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+}
+.service__desc {
+  margin-left: 10px;
+  margin-top: 18px;
+  max-width: 200px;
+}
+
+@media (max-width: 1260px) {
+  .center {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .top__content {
+    position: sticky;
+    justify-content: center;
+  }
+  .about {
+    margin-top: 30px;
+  }
+  .about__text {
+    position: sticky;
+    width: 100%;
+  }
+  .services__dot-image, .services__circle-image {
+    display: none;
+  }
+  .services__main-image {
+    width: 50%;
+  }
 }/*# sourceMappingURL=style.css.map */

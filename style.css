@@ -7,7 +7,9 @@ html {
   margin: 0;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -114,13 +116,13 @@ a {
   font-weight: 700;
   font-size: 50px;
   line-height: 71px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .top__desc {
   margin-top: 18px;
   width: 471px;
   height: 108px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .top__button {
   margin-top: 10px;
@@ -130,12 +132,15 @@ a {
 }
 
 .button {
-  background: #FAFAFA;
+  background: #14213d;
   border-radius: 35px;
   border: none;
   width: 264px;
   height: 67px;
   transition: all 0.5s;
+  font-size: 22px;
+  line-height: 31px;
+  color: #fafafa;
 }
 .button:hover {
   transform: scale(1.05);
@@ -149,7 +154,7 @@ a {
   width: 1039px;
   height: 326px;
   left: 111px;
-  background: #14213D;
+  background: #14213d;
   box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
   border-radius: 35px;
   background-image: url(./images/Vector.svg);
@@ -160,12 +165,12 @@ a {
   font-weight: 500;
   font-size: 36px;
   line-height: 51px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .about__desc {
   padding-top: 29px;
   padding-left: 45px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .about__arrow {
   float: right;
@@ -204,6 +209,7 @@ a {
   grid-template-columns: 50% 50%;
   -moz-column-gap: 32px;
        column-gap: 32px;
+  padding-bottom: 161px;
 }
 .services__main-image {
   position: absolute;
@@ -251,6 +257,31 @@ a {
   max-width: 200px;
 }
 
+.process {
+  display: flex;
+  -moz-column-gap: 123px;
+       column-gap: 123px;
+  justify-content: space-around;
+}
+.process__text {
+  margin-top: 194px;
+}
+.process__desc {
+  max-width: 485.51px;
+  margin-top: 52px;
+}
+.process__button {
+  margin-top: 60px;
+}
+.process__images {
+  margin-top: 102px;
+  max-width: 570px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  justify-content: center;
+}
+
 @media (max-width: 1260px) {
   .center {
     padding-right: 16px;
@@ -267,10 +298,29 @@ a {
     position: sticky;
     width: 100%;
   }
+  .services {
+    display: block;
+  }
   .services__dot-image, .services__circle-image {
     display: none;
   }
   .services__main-image {
-    width: 50%;
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .process {
+    text-align: center;
+    display: block;
+  }
+  .process__text {
+    margin-top: 30px;
+  }
+  .process__desc {
+    width: 100%;
+    margin: 20px auto;
+  }
+  .process__images {
+    margin: 40px auto;
   }
 }/*# sourceMappingURL=style.css.map */
